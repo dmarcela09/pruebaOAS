@@ -1,0 +1,70 @@
+<h1>Marcadores</h1>
+<br>
+<div class="row mx-5">
+    <!-- A vs B -->
+    <div class="col-md-2">
+        <span class="input-group-text" id="inputGroup-sizing-default">EQUIPO A</span>
+        <span class="input-group-text" id="inputGroup-sizing-default">EQUIPO B</span>
+    </div>
+    <!-- Marcador A vs B -->
+    <div class="col-md-2">
+        <input type="NUMBER" class="form-control" min="0" [(ngModel)] ="marcadores[0][0]">
+        <input type="NUMBER" class="form-control" min="0" [(ngModel)] ="marcadores[0][1]">
+    </div>
+    <!-- A vs C -->
+    <div class="col-md-2">
+        <span class="input-group-text" id="inputGroup-sizing-default">EQUIPO A</span>
+        <span class="input-group-text" id="inputGroup-sizing-default">EQUIPO C</span>
+    </div>
+    <!-- Marcador A vs C -->
+    <div class="col-md-2">
+        <input type="NUMBER" class="form-control" min="0" [(ngModel)] ="marcadores[1][0]">
+        <input type="NUMBER" class="form-control" min="0" [(ngModel)] ="marcadores[1][1]">
+    </div>
+    <!-- A vs D -->
+    <div class="col-md-2">
+        <span class="input-group-text" id="inputGroup-sizing-default">EQUIPO A</span>
+        <span class="input-group-text" id="inputGroup-sizing-default">EQUIPO D</span>
+    </div>
+    <!-- Marcador A vs D -->
+    <div class="col-md-2">
+        <input type="NUMBER" class="form-control" min="0" [(ngModel)] ="marcadores[2][0]">
+        <input type="NUMBER" class="form-control" min="0" [(ngModel)] ="marcadores[2][1]">
+    </div>
+  </div>
+<br>
+<div class="row mx-5">
+    <!-- B vs C -->
+    <div class="col-md-2">
+        <span class="input-group-text" id="inputGroup-sizing-default">EQUIPO B</span>
+        <span class="input-group-text" id="inputGroup-sizing-default">EQUIPO C</span>
+    </div>
+    <!-- Marcador B vs C -->
+    <div class="col-md-2">
+        <input type="NUMBER" class="form-control" min="0" [(ngModel)] ="marcadores[3][0]">
+        <input type="NUMBER" class="form-control" min="0" [(ngModel)] ="marcadores[3][1]">
+    </div>
+    <!-- B vs D -->
+    <div class="col-md-2">
+        <span class="input-group-text" id="inputGroup-sizing-default">EQUIPO B</span>
+        <span class="input-group-text" id="inputGroup-sizing-default">EQUIPO D</span>
+    </div>
+    <!-- Marcador B vs D -->
+    <div class="col-md-2">
+        <input type="NUMBER" class="form-control" min="0" [(ngModel)] ="marcadores[4][0]">
+        <input type="NUMBER" class="form-control" min="0" [(ngModel)] ="marcadores[4][1]">
+    </div>
+    <!-- C vs D -->
+    <div class="col-md-2">
+        <span class="input-group-text" id="inputGroup-sizing-default">EQUIPO C</span>
+        <span class="input-group-text" id="inputGroup-sizing-default">EQUIPO D</span>
+    </div>
+    <!-- Marcador C vs D -->
+    <div class="col-md-2">
+        <input type="NUMBER" class="form-control" min="0" [(ngModel)] ="marcadores[5][0]">
+        <input type="NUMBER" class="form-control" min="0" [(ngModel)] ="marcadores[5][1]">
+    </div>
+  </div>
+<br>
+  <button type="button" class="btn btn-info mx-5" (click)="showMe()">Enviar Resultados</button>
+  <app-cuadrangular [resultados] = "resultados"></app-cuadrangular>
